@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    list-style-type: none;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0  auto;
+}
+
+/* nav area */
+nav {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 25px 4px;
+}
+nav ul {
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 25px;
+}nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* banner area */
+.banner {
+    background: url(../images/bnr_bg.jpg) no-repeat center top;
+    height: 800px;
+    position: relative;
+    overflow: hidden; 
+}
+.banner::before {
+    content: '';
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.bnr_box {
+    position: absolute;
+    width: 855.3px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    top: 400px;
+    max-width: 100%;
+}
+.bnr_box h2 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 85px;
+}
+.bnr_box h2 span {
+    display: block;
+}
+.bnr_box a {
+    background: url(../images/bnr_arrow.png) no-repeat center top;
+    width: 58px;
+    height: 60px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -110px;
+    transform: scale(1);
+}
+.bnr_box a:hover {
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+/* bottom area */
+.btm1_box {
+    min-height: 800px;
+    padding: 100px 0;
+}
+.btm1_box h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 84px;
+}
+.btm1_box h2 span {
+    display: block;
+    font-size: 20px;
+}
+.btm1_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btm1_inner section {
+    width: 46%;
+    margin: 8px;
+}
+.btm1_inner section figure {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.btm1_inner section h3 {
+    font-size: 30px;
+    margin: 25px auto;
+    line-height: 28px;
+}
+.btm1_inner section h3 span {
+    display: block;
+    font-size: 16px;
+}
+.btm1_inner section a {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.btm1_inner section a:hover {
+    text-decoration: none;
+}
+.btm1_box p {
+    font-size: 24px;
+    text-align: center;
+}
+.btm2_box .btm2_btn {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    width: 230px;
+    margin: 55px auto 0;
+    max-width: 100%;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 60px;
+}
+.btm2_box .btm2_btn:hover {
+    background: #fff;
+    color: #000;
+}
+.bottom2 {
+    background: #e5e5e5;
+    padding-top: 45px;
+}
+.btm2_box {
+    min-height: 800px;
+    position: relative;
+    text-align: center;
+}
+.btm2_box h2 {
+    font-size: 45px;
+}
+.btm2_box p {
+    font-size: 18px;
+    margin: 16px auto 100px;
+}
+.btm2_inner {
+    display: flex;
+    justify-content: center;
+}
+.btm2_inner section {
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.btm2_inner section::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    left: 0;
+    top: 0;
+}
+.btm2_inner section a {
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    bottom: 155px;
+    border: 3px solid #fff;
+    width: 242px;
+    margin: 0 auto;
+    height: 74px;
+    line-height: 74px;
+    font-size: 19px;
+    max-width: 100%;
+    font-weight: 600;
+}
+.btm2_inner section a:hover {
+    background: #fff;
+    color: #000;
+}
+footer {
+    background: #000;
+    padding: 6px 2px;
+}
+.ftr_box ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ftr_box ul li {
+    margin: 4px;
+    width: 40px;
+}
+.ftr_box ul li a {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    display: block;
+}
+.ftr_box ul li a:hover {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+}
