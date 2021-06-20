@@ -44,6 +44,7 @@
 @media screen and (max-width: 576px) {
   .navbar-expand-sm {
     justify-content: flex-end !important;
+    background: #343a40;
   }
   .navbar-collapse {
     text-align: right;
