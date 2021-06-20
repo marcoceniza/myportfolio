@@ -8,80 +8,102 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#bottom1">About Me</a></li>
-                <li><a href="#bottom2">My Works</a></li>
-                <li><a href="javascript:;">Contact Me</a></li>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link aboutMe" href="#middle">About Me</a></li>
+                <li class="nav-item"><a class="nav-link myWorks" href="#bottom">My Works</a></li>
+                <li class="nav-item"><a class="nav-link contactMe" href="#footer">Contact Me</a></li>
             </ul>
         </div>
     </nav>
-    <div class="banner">
-        <div class="container">
-            <div class="bnr_box">
-                <h2>Hi! I am Marco Angelo Ceniza  <span>I am a Web Developer</span></h2>
-                <a href="#bottom1"></a>
+    <div class="container-fluid banner">
+        <figure><img src="images/bnr_bg.jpg" alt="laptop"></figure>
+        <div class="bnr_info">
+            <h2 class="animate__animated animate__fadeIn animate__delay-1s">Hi! I am Marco Angelo Ceniza <span class="animate__animated animate__fadeIn animate__delay-2s">I am a Web Developer</span></h2>
+            <a class="animate__animated animate__fadeInUp animate__delay-3s" href="#middle"></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="middle" id="middle">
+            <h2>About Me <span>This is my Personal Information.</span></h2>
+            <figure class="owner_pic"><img src="images/mypic.png" alt="Developer"></figure>
+            <p>Hi! I am Marco Angelo Ceniza, i’m Web Developer since 2018. I am focusing more on front end, but i code also in backend, i used PHP. I also have experienced using CMS like Wordpress. Take a look of my sample works below.</p>
+            <div class="middle_inner">
+                <ul>
+                    <li><figure><img src="images/prog_icons/html.png" alt="html"></figure></li>
+                    <li><figure><img src="images/prog_icons/css.png" alt="css"></figure></li>
+                    <li><figure><img src="images/prog_icons/javascript.png" alt="javascript"></figure></li>
+                    <li><figure><img src="images/prog_icons/jQuery.png" alt="jQuery"></figure></li>
+                    <li><figure><img src="images/prog_icons/php.png" alt="php"></figure></li>
+                    <li><figure><img src="images/prog_icons/wordpress.png" alt="wordpress"></figure></li>
+                    <li><figure><img src="images/prog_icons/github.png" alt="github"></figure></li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="bottom1" id="bottom1">
-        <div class="container">
-            <div class="btm1_box">
-                <h2>About Me <span>This is my personal information</span></h2>
-                <div class="btm1_inner">
-                    <section>
-                        <figure><img src="images/mypic.png" alt="Dveloper"></figure>
-                        <h3>Marco Angelo Ceniza <span>(Web Developer)</span></h3>
-                        <a href="mailto:marcoceniza15@gmail.com">marcoceniza15@gmail.com</a>
-                        <a href="tel:09667414792">09667414792</a>
-                    </section>
-                    <section>
-                        <p>Hi! I am Marco Angelo Ceniza, i’m a Web Developer since 2018. I am focusing more on front end, but
-                            i code also in backend, i used PHP. I also have experienced using CMS like Wordpress. Take a
-                            look of my sample works below.
-                            </p>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom2" id="bottom2">
-        <div class="container">
-            <div class="btm2_box">
-                <h2>My Recent Works</h2>
-                <p>Here are a few design projects I've worked on recently.</p>
-                <div class="btm2_inner">
-                    <section>
-                        <figure><img src="images/btm2_img1.jpg" alt="laptop"></figure>
-                        <a href="javascript:">View Project &raquo;</a>
-                    </section>
-                    <section>
-                        <figure><img src="images/btm2_img2.jpg" alt="laptop"></figure>
-                        <a href="javascript:">View Project &raquo;</a>
-                    </section>
-                    <section>
-                        <figure><img src="images/btm2_img3.jpg" alt="laptop"></figure>
-                        <a href="javascript:">View Project &raquo;</a>
-                    </section>
-                </div>
-                <a class="btm2_btn" href="javascript:;">Click Here &raquo;</a>
+    <div class="bottom_con">
+        <div class="bottom" id="bottom">
+            <h2>My Recent Works</h2>
+            <p>Here are a few design projects I've worked on recently.</p>
+            <div class="btm_box">
+                <section>
+                    <figure><img src="images/btm2_img1.jpg" alt="laptop">
+                        <a href="javascript:;">Coming soon...</a></figure>
+                </section>
+                <section>
+                    <figure><img src="images/btm2_img2.jpg" alt="laptop">
+                        <a href="javascript:;">Coming soon...</a></figure>
+                </section>
+                <section>
+                    <figure><img src="images/btm2_img3.jpg" alt="laptop">
+                        <a href="javascript:;">Coming soon...</a></figure>
+                </section>
             </div>
         </div>
     </div>
     <footer>
         <div class="container">
-            <div class="ftr_box">
+            <div class="ftr_box" id="footer">
+                <h2>Contact Information</h2>
+                <p>Get in touch with me.</p>
                 <ul>
-                    <li><a href="javascript:;"><img src="images/fb_icon.png" alt="facebook"></a></li>
-                    <li><a href="javascript:;"><img src="images/insta_icon.png" alt="instagram"></a></li>
-                    <li><a href="javascript:;"><img src="images/twitter_icon.png" alt="twitter"></a></li>
+                    <li>
+                        <address>Bontores Street Villa Kalubihan,
+                        <span>Basak San Nicolas Cebu City</span></address>
+                    </li>
+                    <li>
+                        <a href="tel:096-675-14792">096-675-14792</a>
+                    </li>
+                    <li>
+                        <a href="mailto:marcoceniza15@gmail.com">marcoceniza15@gmail.com</a>
+                    </li>
                 </ul>
             </div>
+            <div class="social_media">
+                <ul>
+                    <li><a href="javascript:;" target="_blank"><figure><img src="images/fb_icon.png" alt="facebook"></figure></a></li>
+                    <li><a href="javascript:;" target="_blank"><figure><img src="images/twitter_icon.png" alt="twitter_icon"></figure></a></li>
+                    <li><a href="javascript:;" target="_blank"><figure><img src="images/insta_icon.png" alt="instagram"></figure></a></li>
+                </ul>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3925.686228366529!2d123.86458531393481!3d10.28684582085403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBontores%20Street%20Villa%20Kalubihan%20Basak%20San%20Nicolas%20Cebu%20City!5e0!3m2!1sen!2sph!4v1624057723988!5m2!1sen!2sph" allowfullscreen></iframe>
+        <div class="container">
+            <p class="copyright">Copyright &copy; <span id="year"></span> <script> let year = new Date(); document.getElementById('year').innerHTML = year.getFullYear(); </script> <q>&period;</q> <strong>Marco Ceniza</strong> <q>&period;</q> <strong>Web Developer</strong></p>
         </div>
     </footer>
 </body>
     <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 </html>
