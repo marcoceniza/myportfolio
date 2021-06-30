@@ -12,11 +12,22 @@ $(document).ready(function() {
   })
 
   $('.owl-carousel').owlCarousel({
-    nav: true,
-    dots: true,
+    nav: false,
+    dots: false,
     loop:true,
     autoplay: true,
     margin: 4,
+    responsive: {
+      0:{
+        items:1
+      },
+      500:{
+        items:2
+      },
+      1000:{
+        items:3
+      },
+    }
   })
 
   $('#modal').fadeIn();

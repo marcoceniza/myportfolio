@@ -197,7 +197,7 @@ q::before, q::after {
     margin: 6px;
 } */
 .bottom_con {
-    background: #efefef;
+    background: linear-gradient(to bottom, #b2ecec, #4f7e7e);
     padding: 0 35px;
 }
 .bottom {

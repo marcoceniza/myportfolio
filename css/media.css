@@ -10,9 +10,6 @@
   .btm_box {
     justify-content: center;
   }
-  .bottom section {
-    width: 40%;
-  }
   .bottom section figure a {
     bottom: 145px;
   }
@@ -25,20 +22,12 @@
     line-height: 45px;
     font-size: 35px;
   }
-  .bottom section {
-    width: 46%;
-  }
   .bottom section figure a {
     bottom: 12px;
   }
   .ftr_box ul li {
     width: 45%;
     margin: 15px auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  .bottom section {
-    width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
