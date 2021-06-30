@@ -11,4 +11,18 @@ $(document).ready(function() {
     
   })
 
+  $('.owl-carousel').owlCarousel({
+    nav: true,
+    dots: true,
+    loop:true,
+    autoplay: true,
+    margin: 4,
+  })
+
+  $('#modal').fadeIn();
+
+  $('#closeModal').click(function() {
+    $('#modal').fadeOut();
+  });
+
 });

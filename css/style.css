@@ -18,6 +18,57 @@ q::before, q::after {
     display: none;
 }
 
+/* modal */
+#modal {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.modal_con {
+    background: linear-gradient(to top, #5d8c8c, #265555);
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    padding: 55px 12px 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+}
+
+.modal_con .close_modal {
+    font-size: 18px;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    width: 240px;
+    display: block;
+    margin: 60px auto 0;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.modal_con .close_modal:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.modal_con p {
+    font-size: 18px;
+}
+
+.modal_con p span {
+    display: block;
+    font-size: 40px;
+}
+
 /* nav */
 .navbar {
     position: absolute !important;
@@ -135,7 +186,7 @@ q::before, q::after {
 }
 
 /* bottom */
-.btm_box {
+/* .btm_box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -144,7 +195,7 @@ q::before, q::after {
 .bottom section {
     width: 30%;
     margin: 6px;
-}
+} */
 .bottom_con {
     background: #efefef;
     padding: 0 35px;
@@ -158,17 +209,6 @@ q::before, q::after {
 }
 .bottom p {
     margin: 15px auto 80px;
-}
-.btm_box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.bottom section {
-    width: 30%;
-    margin: 6px;
-    position: relative;
 }
 .bottom section figure {
     margin: 0;
