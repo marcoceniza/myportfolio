@@ -9,7 +9,7 @@ $(document).ready(function() {
       $('nav').removeClass('bg-dark');
     }
     
-  })
+  });
 
   $('.owl-carousel').owlCarousel({
     nav: false,
@@ -28,7 +28,7 @@ $(document).ready(function() {
         items:3
       },
     }
-  })
+  });
 
   $('#modal').fadeIn();
 
